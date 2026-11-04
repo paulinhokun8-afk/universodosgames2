@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigo - Medicina & Saúde</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Medicina & Saúde</h1>
+    <p>Informação para uma vida mais saudável.</p>
+  </header>
+
+  <main>
+    <p id="loading">Carregando artigo...</p>
+
+    <div id="post" class="hide">
+      <a href="index.html" class="back">← Voltar aos artigos</a>
+
+      <div id="post-container"></div>
+
+      <section class="comments">
+        <h2>Comentários</h2>
+
+        <form id="comment-form">
+          <div>
+            <label for="email">Seu e-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="body">Comentário:</label>
+            <textarea
+              name="body"
+              id="body"
+              placeholder="Escreva seu comentário..."
+              required
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar comentário" />
+        </form>
+
+        <div id="comments-container"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Medicina & Saúde © 2026</p>
+  </footer>
+
+</body>
+</html>
